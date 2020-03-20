@@ -93,7 +93,7 @@ class Hangman extends Component {
           <div>
             <h2>Number of wrong geusses:{this.state.nWrong}</h2>
             <p className='Hangman-word'>{this.guessedWord()}</p>
-            <h2>You Won</h2>
+            <h4>You Won</h4>
           </div>
           :
           <div>
@@ -107,7 +107,7 @@ class Hangman extends Component {
           <h2>The correct Answer was {this.state.answer}</h2>
           </div>
         }
-        <button onClick={this.handleRestart}>Restart</button>
+        <button onClick={this.handleRestart} id="reset">Restart</button>
 
       </div>
     );
